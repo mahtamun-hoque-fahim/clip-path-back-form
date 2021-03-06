@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    outline: 0;
+}
+body{
+    width: 100vw;
+}
+main{
+    padding: 5vh;
+}
+#speacial-body{ 
+    height: 100%;
+    width: 100vw;
+    background: rgb(0, 132, 255);
+   -webkit-clip-path: polygon(0 0, 100% 0%, 0% 100%); 
+    clip-path: polygon(0 0, 100% 0%, 0% 100%);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#form-body{
+    text-align: center;
+    box-shadow: 0px 0px 20px gray;
+    margin: auto auto;
+    width: 50%;
+    border-radius: 30px;
+    padding-bottom: 5vh;    
+    background: white;
+}
+#logo-div{
+   
+}
+#logo-in-form{
+    height: 30vh;
+}
+
+input{
+    border: none;
+    border-radius: 30px;
+    background: #eeeeee;
+    padding: 2vh 15vh;
+}
+#data-radio{
+    padding-top: 4vh;
+}
+#submit-div{
+    padding-top: 3vh;
+}
+button{
+    padding: 2vh 15vw;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px lightgray;
+    background:rgb(0, 132, 255);
+    color: white;
+    font-size: large;
+}
+button:hover{
+    background: linear-gradient(to right, lime, lightgreen);
+    color: black;
+}
+#copywrite-text{
+    text-align: center;
+    padding: 5vh;
+}
+
+/*  --------------------------for lower devices-------------------- */
+
+@media only screen and (max-width: 600px){
+    body{
+        width: 100vw;
+    }
+    main{
+        padding: 5vh;
+    }
+    #form-body{
+        text-align: center;
+        box-shadow: 0px 0px 20px gray;
+        margin: auto auto;
+        width: 80vw;
+        border-radius: 30px;
+        padding-bottom: 5vh;    
+        background: white;
+    }
+    #logo-div{
+       
+    }
+    #logo-in-form{
+        height: 25vh;
+    }
+    
+    input{
+        border: none;
+        border-radius: 30px;
+        background: lightgray;
+        padding: 2vh 5vh;
+    }
+    #submit-div{
+        padding-top: 3vh;
+    }
+    button{
+        padding: 2vh 15vw;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0px 0px 10px lightgray;
+        background:rgb(0, 132, 255);
+        color: white;
+        font-size: large;
+    }
+    button:hover{
+        background: linear-gradient(to right, lime, lightgreen);
+        color: black;
+    }
+    #copywrite-text{
+        text-align: center;
+        padding: 5vh;
+    }
+
+
+
+
+
+
+
+}
