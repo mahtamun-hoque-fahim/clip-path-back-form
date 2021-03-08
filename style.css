@@ -1,132 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 *{
-    margin: 0;
+    margin: o;
     padding: 0;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto';
 }
-a{
-    outline: 0;
-}
+
 body{
+    height: 100vh;
     width: 100vw;
+    text-align: center;
+    padding: 10vh 0 0 0;
 }
-main{
-    padding: 5vh;
-}
-#speacial-body{ 
-    height: 100%;
-    width: 100vw;
-    background: rgb(0, 132, 255);
-   -webkit-clip-path: polygon(0 0, 100% 0%, 0% 100%); 
-    clip-path: polygon(0 0, 100% 0%, 0% 100%);
+#clip-path{
     position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 51%, 0 67%);
+    background-image: url(1.jpg);
+    background-blend-mode: overlay;
+    /* background-color: #00a2ff9f; */
+    background-position:center;
+    background-size: cover;
     z-index: -1;
     top: 0;
     left: 0;
-}
-#form-body{
-    text-align: center;
-    box-shadow: 0px 0px 20px gray;
-    margin: auto auto;
-    width: 50%;
-    border-radius: 30px;
-    padding-bottom: 5vh;    
-    background: white;
-}
-#logo-div{
-   
-}
-#logo-in-form{
-    height: 30vh;
+    right: 0;
+    bottom: 0;
 }
 
+main{
+    margin: auto auto;
+    box-shadow: 2px 2px 10px gray;
+    width: 40vw;
+    height: 80vh;
+    border-radius: 30px;
+    background: white;
+}
+#logo{
+    height: 30vh;
+}
+#text{
+    line-height: 2vh;
+}
+.inputs{
+    padding: 5px;
+}
 input{
     border: none;
     border-radius: 30px;
+    padding: 2.5vh 5vw;
     background: #eeeeee;
-    padding: 2vh 15vh;
 }
-#data-radio{
-    padding-top: 4vh;
+input:placeholder-shown{
+    color: black;
+    font-weight: bolder;
 }
-#submit-div{
-    padding-top: 3vh;
+#button{
+    padding: 3vh;
 }
 button{
-    padding: 2vh 15vw;
+    padding: 2.5vh 5vw;
     border: none;
     border-radius: 30px;
-    box-shadow: 0px 0px 20px lightgray;
-    background:rgb(0, 132, 255);
+    background:rgb(0, 162, 255);
+    box-shadow: 0px 0px 10px gray;
     color: white;
-    font-size: large;
 }
 button:hover{
-    background: linear-gradient(to right, lime, lightgreen);
+    background: linear-gradient(to right,lime,lightgreen);
     color: black;
 }
-#copywrite-text{
-    text-align: center;
-    padding: 5vh;
-}
 
-/*  --------------------------for lower devices-------------------- */
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width:600px){
     body{
+        height: 100vh;
         width: 100vw;
+        text-align: center;
+        padding: 10vh 0 0 0;
     }
     main{
-        padding: 5vh;
-    }
-    #form-body{
-        text-align: center;
-        box-shadow: 0px 0px 20px gray;
         margin: auto auto;
+        box-shadow: 2px 2px 10px gray;
         width: 80vw;
+        height: 90vh;
         border-radius: 30px;
-        padding-bottom: 5vh;    
         background: white;
     }
-    #logo-div{
-       
+    #logo{
+        height: 30vh;
+        padding: 2vh 0 0 0;
     }
-    #logo-in-form{
-        height: 25vh;
+    #text{
+        line-height: 2vh;
     }
-    
+    .inputs{
+        padding: 5px;
+    }
     input{
         border: none;
         border-radius: 30px;
-        background: lightgray;
-        padding: 2vh 5vh;
+        padding: 2.5vh 5vw;
+        background: #eeeeee;
     }
-    #submit-div{
-        padding-top: 3vh;
+    #button{
+        padding: 2.5vh;
     }
-    button{
-        padding: 2vh 15vw;
-        border: none;
-        border-radius: 30px;
-        box-shadow: 0px 0px 10px lightgray;
-        background:rgb(0, 132, 255);
-        color: white;
-        font-size: large;
-    }
-    button:hover{
-        background: linear-gradient(to right, lime, lightgreen);
-        color: black;
-    }
-    #copywrite-text{
-        text-align: center;
-        padding: 5vh;
-    }
-
-
-
 
 
 
